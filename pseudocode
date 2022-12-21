@@ -1,0 +1,12 @@
+Set list = getline from file
+Set r = number of threads
+
+For each thread
+    Set list = Split(list, r)
+    Start thread
+        return merge_sort(list)
+    End thread
+End for
+
+mergeAll split list
+print the list
